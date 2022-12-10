@@ -39,7 +39,6 @@ fn main() {
             [Shape::Scissors, Shape::Rock] => score += ROCK_VALUE + WIN_VALUE,
             [Shape::Scissors, Shape::Paper] => score += PAPER_VALUE + LOSE_VALUE,
             [Shape::Scissors, Shape::Scissors] => score += SCISSORS_VALUE + TIE_VALUE,
-            _ => (),
         }
     }
     println!("{}", score);
